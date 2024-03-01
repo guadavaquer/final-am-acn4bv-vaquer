@@ -12,6 +12,9 @@
         android:theme="@style/Theme.JuegoCartas"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityJuego6"
             android:exported="false" />
         <activity

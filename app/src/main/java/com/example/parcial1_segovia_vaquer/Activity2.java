@@ -9,34 +9,37 @@ import android.widget.Button;
 
 public class Activity2 extends AppCompatActivity {
 
-    Button btn_aceptar;
+    Button btn_jugar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        btn_aceptar=findViewById(R.id.btn_aceptar);
+        btn_jugar=findViewById(R.id.btn_jugar);
 
-        btn_aceptar.setOnClickListener(new View.OnClickListener() {
+        btn_jugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent aceptar= new Intent (Activity2.this, Activity3.class);
-                startActivity(aceptar);
+                Intent jugar= new Intent (Activity2.this, Activity3.class);
+                startActivity(jugar);
             }
         });
 
-        Button btn_cancelar;
+        Button btn_ranking;
 
 
-            btn_cancelar=findViewById(R.id.btn_cancelar);
+            btn_ranking=findViewById(R.id.btn_ranking);
 
-            btn_cancelar.setOnClickListener(new View.OnClickListener() {
+            btn_ranking.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent cancelar= new Intent (Activity2.this, MainActivity.class);
-                    startActivity(cancelar);
+                    Intent ranking= new Intent (Activity2.this, MainActivity.class);
+                    startActivity(ranking);
                 }
             });
+
+
     }
+
 }
