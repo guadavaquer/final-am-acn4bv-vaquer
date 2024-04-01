@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="256dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +26,8 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:text="Contraseña"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_email" />
@@ -41,12 +45,12 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="170dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="6dp"
+        android:layout_width="181dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
         android:text="No tienes cuenta?"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_registrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -56,10 +60,24 @@
         android:layout_width="162dp"
         android:layout_height="51dp"
         android:layout_marginTop="68dp"
-        android:text="Registrarme"
+        android:layout_marginBottom="96dp"
         android:onClick="onRegistroButtonClick"
+        android:text="Registrarme"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <TextView
+        android:id="@+id/txt_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Ingresar"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
