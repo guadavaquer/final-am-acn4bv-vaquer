@@ -21,22 +21,22 @@ public class LoginActivity extends AppCompatActivity {
     public void login(String email, String password) {
         Log.i("firebase", "email: " + email);
         Log.i("firebase", "password: " + password);
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        //startActivity(intent);
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        if(!email.isEmpty() && !password.isEmpty()) {
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Intent intent = new Intent(getApplicationContext(), Activity2.class);
-                            startActivity(intent);
-                        } else {
-                            Toast.makeText(LoginActivity.this, "Falló el login",
-                                    Toast.LENGTH_SHORT).show();
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Intent intent = new Intent(getApplicationContext(), Activity2.class);
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(LoginActivity.this, "Falló el login",
+                                        Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    }
-                });
+                    });
+        }
     }
 
     public void onLoginButtonClick(View view){
@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onRegistroButtonClick(View view) {
-        Intent intent = new Intent(this, RegistroActivity.class);
+        Intent intent = new Intent(getApplicationContext(), RegistroActivity.class);
         startActivity(intent);
     }
 

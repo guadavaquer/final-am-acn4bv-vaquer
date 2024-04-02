@@ -7,13 +7,24 @@
     tools:context=".RankingActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_ranking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="96dp"
         android:text="Ranking"
-        android:textSize="20sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/txt_volver"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:text="VOLVER"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
