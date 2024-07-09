@@ -1,5 +1,8 @@
 # parcial-1-am-acn4bv-segovia-vaquer
 
+Link a repositorio anterior
+https://github.com/catalinasegovia/final-am-acn4bv-segovia-vaquer
+
 Link a mockup
 https://pr.to/GXCW0L/
 
