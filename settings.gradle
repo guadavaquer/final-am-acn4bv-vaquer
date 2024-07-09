@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Parcial1-Segovia-Vaquer"
+rootProject.name = "final_am_acn4bv_vaquer"
 include ':app'
