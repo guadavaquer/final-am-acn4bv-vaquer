@@ -44,13 +44,19 @@ public class RegistroActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Log.i(TAG, "Creacion de usuario exitosa");
                             FirebaseUser user = mAuth.getCurrentUser();
+
+                            //Verificar
+                            if(user != null) {
+                                sendEmailVerification(user);
+                            }
+
                             Log.i(TAG,"Se recupero la información de autenticacion");
                             String userId = user.getUid();
 
                             Map<String, Object> usuario = new HashMap<>();
                             usuario.put("name", name);
-                            usuario.put("email", email);
-                            usuario.put("puntaje", 0);
+                            //usuario.put("email", email);
+                            usuario.put("score", 0);
 
 
                             db.collection("user").document(userId).set(usuario)
@@ -58,9 +64,9 @@ public class RegistroActivity extends AppCompatActivity {
                                         @Override
                                         public void onSuccess(Void unused) {
 
-                                            Log.d("Registro", "Registro exitoso");
-                                            Toast.makeText(RegistroActivity.this, "Usuario creado exitosamente",
-                                                    Toast.LENGTH_SHORT).show();
+                                            //Log.d("Registro", "Registro exitoso");
+                                            //Toast.makeText(RegistroActivity.this, "Usuario creado exitosamente",
+                                                    //Toast.LENGTH_SHORT).show();
                                             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                                             startActivity(intent);
                                         }
@@ -92,6 +98,22 @@ public class RegistroActivity extends AppCompatActivity {
 
 
     }
+
+    //Método para verificar mail vía correo electrónico
+    private void sendEmailVerification(FirebaseUser user) {
+        user.sendEmailVerification()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(RegistroActivity.this, "Correo de verificación enviado a " + user.getEmail(), Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(RegistroActivity.this, "Fallo al enviar correo de verificación", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
+
 
     public void onRegisterButtonClick(View view) {
         EditText emailInput = findViewById(R.id.txt_email);
