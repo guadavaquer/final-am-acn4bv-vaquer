@@ -22,6 +22,7 @@
         android:layout_width="115dp"
         android:layout_height="52dp"
         android:layout_marginBottom="68dp"
+        android:onClick="onVolverButtonClick"
         android:text="VOLVER"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
