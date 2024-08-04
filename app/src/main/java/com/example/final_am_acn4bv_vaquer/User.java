@@ -2,41 +2,25 @@ package com.example.final_am_acn4bv_vaquer;
 
 public class User {
 
-    private String nombre;
+    private String name;
+    private int score;
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public int getScore() {
+        return score;
     }
 
-    public String getApellido() {
-        return apellido;
+    public void setScore(int score) {
+        this.score = score;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
 
-    public String getUid() {
-        return uid;
-    }
 
-    public void setUid(String uid) {
-        this.uid = uid;
-    }
 
-    public boolean isVerificado() {
-        return verificado;
-    }
-
-    public void setVerificado(boolean verificado) {
-        this.verificado = verificado;
-    }
-
-    private String apellido;
-    private String uid;
-    private boolean verificado;
 }
