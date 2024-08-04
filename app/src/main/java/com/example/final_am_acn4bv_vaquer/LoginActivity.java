@@ -1,13 +1,16 @@
 package com.example.final_am_acn4bv_vaquer;
 
-import androidx.annotation.NonNull;
+import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+
 
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkInfo;
-import android.os.Bundle;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;

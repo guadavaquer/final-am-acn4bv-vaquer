@@ -46,9 +46,18 @@
         <activity
             android:name=".ActivityJuego1"
             android:exported="false" />
+
+        <activity
+            android:name=".ApiClient"
+            android:exported="false"/>
+        <activity
+            android:name=".ApiService"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

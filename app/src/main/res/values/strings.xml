@@ -2,4 +2,7 @@
     <string name="app_name">Blackjack edicion especial</string>
     <string name="title_activity_juego1">JuegoActivity1</string>
     <string name="title_activity_2">Activity2</string>
+
+    <!-- Se debe modificar el link de Replit cada vez que se inicia el modo dev -->
+    <string name="url_image_api">https://5ba329a2-854f-4709-a4b4-c1c89e6259e1-00-2jz78a8k3uo9a.riker.replit.dev</string>
 </resources>

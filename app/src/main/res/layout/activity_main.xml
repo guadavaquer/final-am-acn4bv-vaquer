@@ -19,21 +19,22 @@
     <TextView
         android:layout_width="263dp"
         android:layout_height="68dp"
+        android:layout_marginTop="32dp"
         android:text="¡Bienvenido!"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.256" />
 
     <Button
         android:id="@+id/btn_comenzar"
         android:layout_width="232dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="86dp"
         android:backgroundTint="@color/purple_500"
         android:text="COMENZAR"
         android:textSize="20sp"
