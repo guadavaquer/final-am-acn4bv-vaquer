@@ -68,6 +68,7 @@ public class ActivityJuego2 extends AppCompatActivity  {
         intent.putExtra("idCartas", (int[]) idCartas );
         //ArrayList<Integer> mazo = getIntent().getIntegerArrayListExtra("mazo");
         startActivity(intent);
+        finish();
     }
     private void inicializarMazo() {
         mazo = new ArrayList<>();

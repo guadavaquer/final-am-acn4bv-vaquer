@@ -34,6 +34,7 @@ public class ActivityJuego3 extends AppCompatActivity {
                     Intent intent = new Intent(ActivityJuego3.this, ActivityJuego6.class);
                     intent.putExtra("puntajeJugador", puntajeJugador);
                     startActivity(intent);
+                    finish();
                 }
                 else {
                     Intent intent = new Intent(ActivityJuego3.this, ActivityJuego4.class);
@@ -41,6 +42,7 @@ public class ActivityJuego3 extends AppCompatActivity {
                     intent.putIntegerArrayListExtra("mazo", (ArrayList<Integer>) mazo);
                     intent.putExtra("idCartas", (int[]) idCartas);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

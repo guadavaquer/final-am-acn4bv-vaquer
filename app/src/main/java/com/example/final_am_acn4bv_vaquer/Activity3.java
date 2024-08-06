@@ -23,7 +23,7 @@ public class Activity3 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ingresar= new Intent (Activity3.this, ActivityJuego1.class);
                 startActivity(ingresar);
-               ;
+                finish();
             }
         });
     }}

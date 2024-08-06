@@ -40,6 +40,7 @@ public class ActivityJuego4 extends AppCompatActivity {
                     intent.putExtra("puntajeJugador", puntajeJugador);
                     intent.putExtra("puntajeIA", puntajeIA);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

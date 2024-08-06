@@ -22,6 +22,7 @@ public class ActivityJuego1 extends AppCompatActivity  {
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityJuego1.this, ActivityJuego2.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

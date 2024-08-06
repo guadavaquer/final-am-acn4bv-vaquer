@@ -28,7 +28,7 @@ public class ActivityJuego5 extends AppCompatActivity {
                 intent.putExtra("puntajeJugador", puntajeJugador);
                 intent.putExtra("puntajeIA", puntajeIA);
                 startActivity(intent);
-                finish(); // Cierra LoginActivity para prevenir que el usuario retroceda
+                finish();
             }
         });
 
