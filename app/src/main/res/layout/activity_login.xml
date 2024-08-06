@@ -10,14 +10,15 @@
         android:id="@+id/txt_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:hint="Ingresar email"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_ingresar" />
 
     <EditText
         android:id="@+id/txt_password"
@@ -34,11 +35,12 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="167dp"
-        android:layout_height="49dp"
+        android:layout_width="191dp"
+        android:layout_height="55dp"
         android:layout_marginTop="34dp"
         android:onClick="onLoginButtonClick"
         android:text="Iniciar sesión"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_password" />
@@ -47,7 +49,7 @@
         android:id="@+id/textView7"
         android:layout_width="181dp"
         android:layout_height="22dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="No tienes cuenta?"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -57,25 +59,27 @@
 
     <Button
         android:id="@+id/btn_registrarse"
-        android:layout_width="162dp"
-        android:layout_height="51dp"
+        android:layout_width="182dp"
+        android:layout_height="56dp"
         android:layout_marginTop="68dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="86dp"
         android:onClick="onRegistroButtonClick"
         android:text="Registrarme"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintVertical_bias="0.886" />
 
     <TextView
         android:id="@+id/txt_ingresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="120dp"
         android:text="Ingresar"
+        android:textColor="#673AB7"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

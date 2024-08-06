@@ -32,25 +32,6 @@ public class LoginActivity extends AppCompatActivity {
 
     private User user;
 
-   /* public void checkConnectionOnClick(View view) { checkConnection(); }
-
-    public void checkConnection(){
-        LinearLayout noInternetMessage = findViewById(R.id.noInternetMessage);
-        ConnectivityManager connectivityManager =
-                (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = ConnectivityManager.getActivityNetworkInfo();
-        if(networkInfo != null && networkInfo.isConnected()) {
-            //Async Task
-            GetRicks getRicks = new GetRicks();
-            getRicks.execute("https://rickandmortyapi.com/api/character");
-            noInternetMessage.setVisibility(View.INVISIBLE);
-        } else {
-            noInternetMessage.setVisibility(View.VISIBLE);
-            //Mensaje sin internet
-        }
-    }
-    */
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -33,10 +33,6 @@ public class Activity2 extends AppCompatActivity {
             }
         });
 
-        //Button btn_ranking = btn_ranking;
-
-        // btn_ranking=findViewById(R.id.btn_ranking);
-
         btn_ranking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

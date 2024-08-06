@@ -30,19 +30,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /*@Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            Log.i("firebase", "Se encuentra un usuario registrado");
-        } else {
-            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(intent);
-            Log.i("firebase", "No hay un usuario registrado");
-        }
-    }
-    */
-
 }
